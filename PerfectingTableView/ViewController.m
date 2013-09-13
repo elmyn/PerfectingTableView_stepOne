@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppRecord.h"
+#import "MyCustomCell.h"
 
 @interface ViewController ()
 
@@ -27,23 +28,26 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
 	static NSString *CellIdentifier = @"LazyTableCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    MyCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [MyCustomCell loadInstanceFromNib];
     }
     
     AppRecord *appRecord = [self.entries objectAtIndex:indexPath.row];
-    cell.textLabel.text = appRecord.appName;
-    cell.detailTextLabel.text = appRecord.artist;
+    cell.myTitleLabel.text = appRecord.appName;
+    cell.myAuthorLabel.text = appRecord.artist;
+    cell.myPriceLabel.text = appRecord.appPrice;
     
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0f;
+}
 
 
 - (void)viewDidUnload {

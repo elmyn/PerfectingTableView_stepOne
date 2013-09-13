@@ -20,6 +20,8 @@
 		05EB221217E30B86002F4491 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EB221017E30B86002F4491 /* ViewController.xib */; };
 		05EB221D17E30BB6002F4491 /* AppRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB221A17E30BB6002F4491 /* AppRecord.m */; };
 		05EB221E17E30BB6002F4491 /* ParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB221C17E30BB6002F4491 /* ParseOperation.m */; };
+		05EB222117E30D66002F4491 /* MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EB222017E30D66002F4491 /* MyCustomCell.m */; };
+		05EB222517E3133B002F4491 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05EB222417E3133B002F4491 /* MyCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		05EB221A17E30BB6002F4491 /* AppRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRecord.m; sourceTree = "<group>"; };
 		05EB221B17E30BB6002F4491 /* ParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseOperation.h; sourceTree = "<group>"; };
 		05EB221C17E30BB6002F4491 /* ParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseOperation.m; sourceTree = "<group>"; };
+		05EB221F17E30D66002F4491 /* MyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCell.h; sourceTree = "<group>"; };
+		05EB222017E30D66002F4491 /* MyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCell.m; sourceTree = "<group>"; };
+		05EB222417E3133B002F4491 /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,9 @@
 				05EB220D17E30B86002F4491 /* ViewController.h */,
 				05EB220E17E30B86002F4491 /* ViewController.m */,
 				05EB221017E30B86002F4491 /* ViewController.xib */,
+				05EB221F17E30D66002F4491 /* MyCustomCell.h */,
+				05EB222017E30D66002F4491 /* MyCustomCell.m */,
+				05EB222417E3133B002F4491 /* MyCustomCell.xib */,
 				05EB21FC17E30B86002F4491 /* Supporting Files */,
 			);
 			path = PerfectingTableView;
@@ -181,6 +189,7 @@
 				05EB220A17E30B86002F4491 /* Default@2x.png in Resources */,
 				05EB220C17E30B86002F4491 /* Default-568h@2x.png in Resources */,
 				05EB221217E30B86002F4491 /* ViewController.xib in Resources */,
+				05EB222517E3133B002F4491 /* MyCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +205,7 @@
 				05EB220F17E30B86002F4491 /* ViewController.m in Sources */,
 				05EB221D17E30BB6002F4491 /* AppRecord.m in Sources */,
 				05EB221E17E30BB6002F4491 /* ParseOperation.m in Sources */,
+				05EB222117E30D66002F4491 /* MyCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
